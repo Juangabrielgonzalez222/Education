@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Education</title>
+    <link rel="icon" type="image/png" href="img/FavIcon.png">
+    <!-- UiKit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/css/uikit.min.css" />
+  	<!-- estilos -->
+  	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
+  <body>
+  	<!-- header -->
+	  <header class="uk-navbar-container">
+		  	<div class="uk-container uk-container-expand">
+			  	<nav uk-navbar>
+					  <div class="uk-navbar-left">
+					    <a class="uk-navbar-item uk-logo" href="index.html">
+			      		<img src="img/Logo2.png" alt="Logo" width="148" height="50">
+			    		</a>
+			    	</div>
+			    	<div class="uk-navbar-right">
+			    		<a class="uk-visible@m" uk-toggle="target: #modal-busqueda">
+			    			<span class="icono-peq iconify" data-icon="tabler:search"></span>
+			    		</a>
+			    		<a href="inicioSesion.html">
+			    			<span class="icono-peq iconify" data-icon="tabler:login"></span>
+			    		</a>
+			    		<a class="uk-hidden@m" href="#">
+			    			<span class="icono-peq iconify" data-icon="tabler:menu-2" uk-toggle="target: #offcanvas-nav"></span>
+			    		</a>
+					    <ul class="uk-navbar-nav uk-visible@m">
+					      <li>
+					         <a href="#">Categorias</a>
+					         <div class="uk-navbar-dropdown uk-padding-remove-horizontal">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="cursosLiderazgo.html">Liderazgo</a></li>
+                                <li><a href="cursosIngles.html">Inglés</a></li>
+                                <li><a href="cursosDesarrollo.html">Desarrollo</a></li>
+                               	<li><a href="cursosDiseñoYUX.html">Diseño y UX</a></li>
+                                <li><a href="cursosMarketing.html">Marketing</a></li>
+                                <li><a href="cursosStartups.html">Startups</a></li>
+                            </ul>
+                   </div>
+					      </li>
+					      <li>
+					         <a href="contacto.html">Contáctanos</a>
+					      </li>
+					    </ul>
+					  </div>
+					</nav>
+				</div>
+				<!-- modal -->
+				<div id="modal-busqueda" class="uk-modal" uk-modal>
+    			<div class="uk-modal-dialog">
+        		<div class="uk-modal-body">
+        			<button class="uk-modal-close uk-margin-auto-left uk-display-block" type="button">
+        				<span class="icono-peq iconify" data-icon="tabler:x"></span>
+        			</button>
+            	<form class="uk-margin-top">
+            		<input class="uk-input" type="search" placeholder="Buscar" aria-label="Buscar" autofocus>
+        			</form>
+        		</div>
+    			</div>
+				</div>
+				<!-- offcanvas -->
+				<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    			<div class="uk-offcanvas-bar">
+        		<ul class="uk-nav-default" uk-nav>
+        			<li>
+        				<a uk-toggle="target: #modal-busqueda">
+        					<span class="icono-peq iconify" data-icon="tabler:search"></span>
+			    			</a>
+			    		</li>
+			    		<li class="uk-parent uk-margin-top">
+            		<a href="#">Categorias</a>
+		            <ul class="uk-nav-sub">
+		              <li><a href="cursosLiderazgo.html" uk-toggle="target: #offcanvas-nav">Liderazgo</a></li>
+		              <li><a href="cursosIngles.html" uk-toggle="target: #offcanvas-nav">Inglés</a></li>
+		              <li><a href="cursosDesarrollo.html" uk-toggle="target: #offcanvas-nav">Desarrollo</a></li>
+		              <li><a href="cursosDiseñoYUX.html" uk-toggle="target: #offcanvas-nav">Diseño y UX</a></li>
+		              <li><a href="cursosMarketing.html" uk-toggle="target: #offcanvas-nav">Marketing</a></li>
+		              <li><a href="cursosStartups.html" uk-toggle="target: #offcanvas-nav">Startups</a></li>
+		            </ul>
+          		</li>
+            	<li class="uk-margin-top">
+					      <a href="contacto.html" uk-toggle="target: #offcanvas-nav">Contáctanos</a>
+					    </li>
+        		</ul>
+        	</div>
+        </div>
+		</header>
+		<!-- cuerpo -->
+		<section class="uk-animation-fade">
+			<div class="uk-container-expand uk-padding">
+					<div class="uk-width-2-3@m uk-margin-auto">
+						<div class="uk-text-center">
+								<h1>Contacta a Education</h1>
+								<p class="uk-margin-remove-bottom">Siempre que quieras puedes contactarnos, a través de los siguientes medios.</p>
+						</div>
+					</div>
+			</div>
+		</section>
+		<!-- contactos -->
+		<section class="uk-section uk-section-secondary uk-padding uk-text-center">
+			<div class="uk-container-expand">
+				<div class="uk-width-2-3@m uk-margin-auto">
+					<h2>Redes Sociales</h2>
+					<div class="uk-flex flex-col-gap-2 uk-flex-center">
+						<a href="https://twitter.com" target="_blank"><span class="icono-nm iconify" data-icon="tabler:brand-twitter"></span></a>
+						<a href="https://www.facebook.com" target="_blank"><span class="icono-nm iconify" data-icon="tabler:brand-facebook"></span></a>
+						<a href="https://www.linkedin.com" target="_blank"><span class="icono-nm iconify" data-icon="tabler:brand-linkedin"></span></a>
+						<a href="https://www.instagram.com" target="_blank"><span class="icono-nm iconify" data-icon="tabler:brand-instagram"></span></a>
+					</div>
+					<h2>Otros medios</h2>
+					<div class="">
+						<div class="uk-flex flex-col-gap-2 uk-flex-middle uk-flex-center">
+							<span class="icono-nm iconify" data-icon="tabler:mail"></span>
+							<p class="texto-secundario-2">team@education.com</p>
+						</div>
+						<div class="uk-flex flex-col-gap-2 uk-flex-middle uk-flex-center">
+							<span class="icono-nm iconify" data-icon="tabler:brand-whatsapp"></span>
+							<a class="texto-secundario-2" href="https://api.whatsapp.com/send?phone=" target="_blank">Education</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- sucursal-->
+		<section class="uk-section uk-section-primary uk-padding uk-text-center uk-text-left@m">
+			<div class="uk-container-expand">
+				<div class="uk-width-2-3@m uk-margin-auto uk-flex-md uk-flex-between@m">
+					<div class="uk-width-2-5@m">
+						<h2>Sucursal</h2>
+						<p class="margin-remove-bottom-md">Aunque somos una empresa en mayor parte remota, contamos con una sucursal en Buenos Aires, Argentina. Donde podrás acercarte y dialogar con nosotros en persona.</p>
+					</div>
+					<div class="uk-width-2-5@m uk-text-center">
+						<img class="alto-1" src="img/buenos-aires.jpg">
+						<h3 class="uk-margin">Buenos Aires, Argentina</h3>
+						<p class="texto-secundario-1 uk-margin-remove-bottom">Av. Córdoba 1255 Piso 8, C1055 AAC</p>
+					</div>
+				</div>
+			</div>
+		</section>	
+		<!-- Footer -->
+		<footer class="uk-section uk-section-default uk-padding uk-text-center uk-text-left@m">
+			<div class="uk-container-expand">
+				<div class="uk-width-2-3@m uk-margin-auto">
+					<div class="uk-flex-md uk-flex-between@m">
+						<div class="uk-width-1-3@m">
+							<a class="uk-logo" href="index.html">
+								<img src="img/Logo.png" width="148" height="50">
+							</a>
+							<p class="margin-remove-bottom-md">Transformamos la economía de nuestros países entrenando a la próxima generación de profesionales en tecnología.</p>
+						</div>
+						<a class="uk-button uk-button-secondary uk-width-1-1 uk-width-auto@m" href="contacto.html">Contáctanos</a>
+					</div>
+				</div>
+			</div>
+			<p class="uk-text-center">© 2023 Education, Inc.</p>
+		</footer>
+		<!-- UIkit JS -->
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/js/uikit.min.js"></script>
+		<!-- iconos -->
+		<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+	</body>
+</html>

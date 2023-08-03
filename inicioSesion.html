@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Education</title>
+    <link rel="icon" type="image/png" href="img/FavIcon.png">
+    <!-- UiKit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/css/uikit.min.css" />
+  	<!-- estilos -->
+  	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+  </head>
+  <body>
+  	<!-- header -->
+	  <header class="uk-navbar-container">
+		  	<div class="uk-container uk-container-expand">
+			  	<nav uk-navbar>
+					  <div class="uk-navbar-left">
+					    <a class="uk-navbar-item uk-logo" href="index.html">
+			      		<img src="img/Logo2.png" alt="Logo" width="148" height="50">
+			    		</a>
+			    	</div>
+			    	<div class="uk-navbar-right">
+			    		<a class="uk-visible@m" uk-toggle="target: #modal-busqueda">
+			    			<span class="icono-peq iconify" data-icon="tabler:search"></span>
+			    		</a>
+			    		<a class="uk-hidden@m" href="#">
+			    			<span class="icono-peq iconify" data-icon="tabler:menu-2" uk-toggle="target: #offcanvas-nav"></span>
+			    		</a>
+					    <ul class="uk-navbar-nav uk-visible@m">
+					      <li>
+					         <a href="#">Categorias</a>
+					         <div class="uk-navbar-dropdown uk-padding-remove-horizontal">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="cursosLiderazgo.html">Liderazgo</a></li>
+                                <li><a href="cursosIngles.html">Inglés</a></li>
+                                <li><a href="cursosDesarrollo.html">Desarrollo</a></li>
+                               	<li><a href="cursosDiseñoYUX.html">Diseño y UX</a></li>
+                                <li><a href="cursosMarketing.html">Marketing</a></li>
+                                <li><a href="cursosStartups.html">Startups</a></li>
+                            </ul>
+                   </div>
+					      </li>
+					      <li>
+					         <a href="contacto.html">Contáctanos</a>
+					      </li>
+					    </ul>
+					  </div>
+					</nav>
+				</div>
+				<!-- modal -->
+				<div id="modal-busqueda" class="uk-modal" uk-modal>
+    			<div class="uk-modal-dialog">
+        		<div class="uk-modal-body">
+        			<button class="uk-modal-close uk-margin-auto-left uk-display-block" type="button">
+        				<span class="icono-peq iconify" data-icon="tabler:x"></span>
+        			</button>
+            	<form class="uk-margin-top">
+            		<input class="uk-input" type="search" placeholder="Buscar" aria-label="Buscar" autofocus>
+        			</form>
+        		</div>
+    			</div>
+				</div>
+				<!-- offcanvas -->
+				<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    			<div class="uk-offcanvas-bar">
+        		<ul class="uk-nav-default" uk-nav>
+        			<li>
+        				<a uk-toggle="target: #modal-busqueda">
+        					<span class="icono-peq iconify" data-icon="tabler:search"></span>
+			    			</a>
+			    		</li>
+			    		<li class="uk-parent uk-margin-top">
+            		<a href="#">Categorias</a>
+		            <ul class="uk-nav-sub">
+		              <li><a href="cursosLiderazgo.html" uk-toggle="target: #offcanvas-nav">Liderazgo</a></li>
+		              <li><a href="cursosIngles.html" uk-toggle="target: #offcanvas-nav">Inglés</a></li>
+		              <li><a href="cursosDesarrollo.html" uk-toggle="target: #offcanvas-nav">Desarrollo</a></li>
+		              <li><a href="cursosDiseñoYUX.html" uk-toggle="target: #offcanvas-nav">Diseño y UX</a></li>
+		              <li><a href="cursosMarketing.html" uk-toggle="target: #offcanvas-nav">Marketing</a></li>
+		              <li><a href="cursosStartups.html" uk-toggle="target: #offcanvas-nav">Startups</a></li>
+		            </ul>
+          		</li>
+            	<li class="uk-margin-top">
+					      <a href="contacto.html" uk-toggle="target: #offcanvas-nav">Contáctanos</a>
+					    </li>
+        		</ul>
+        	</div>
+        </div>
+		</header>
+		<!-- inicioSesion -->
+		<div class="uk-animation-fade iniciarSesion">
+			<div class="uk-container-expand uk-padding">
+					<div class="uk-width-1-3@m uk-margin-auto uk-text-center">
+						<div class="uk-hidden@m">
+							<h1>Iniciar Sesión</h1>
+							<form method="POST">
+								<input class="uk-input" type="text" placeholder="Tu email" required>
+								<input class="uk-input uk-margin-top" type="password" placeholder="Tu contraseña" required>
+								<div class="uk-margin-top">
+									<a class="texto-secundario-2" href="#">¿Olvidaste tu contraseña?</a>
+								</div>
+								<input class="uk-button uk-button-primary uk-width-1-1 uk-margin-top" type="submit" name="iniciarSesion" value="Iniciar Sesión">
+								<p>O</p>
+								<div class="uk-flex flex-col-gap-2 uk-flex-center">
+									<a href="#"><span class="icono-nm iconify" data-icon="tabler:brand-twitter"></span></a>
+									<a href="#"><span class="icono-nm iconify" data-icon="tabler:brand-facebook"></span></a>
+									<a href="#"><span class="icono-nm iconify" data-icon="tabler:brand-google"></span></a>
+								</div>
+							</form>	
+							<hr>
+							<p>¿Aún no tienes cuenta en Education?</p>
+							<a class="uk-button uk-button-default uk-width-1-1" href="#" uk-toggle="target: #modal-registro">Crear cuenta</a>
+						</div>
+						<div class="uk-visible@m uk-card uk-card-default uk-card-body">
+							<h1>Iniciar Sesión</h1>
+							<form class="formulario"  method="POST">
+								<input class="uk-input" type="text" placeholder="Tu email" required>
+								<input class="uk-input uk-margin-top" type="password" placeholder="Tu contraseña" required>
+								<div class="uk-margin-top">
+									<a class="texto-secundario-2" href="#">¿Olvidaste tu contraseña?</a>
+								</div>
+								<input class="uk-button uk-button-primary uk-width-1-1 uk-margin-top" type="submit" name="iniciarSesion" value="Iniciar Sesión">
+								<p>O</p>
+								<div class="uk-flex flex-col-gap-2 uk-flex-center">
+									<a href="#"><span class="icono-nm iconify" data-icon="tabler:brand-twitter"></span></a>
+									<a href="#"><span class="icono-nm iconify" data-icon="tabler:brand-facebook"></span></a>
+									<a href="#"><span class="icono-nm iconify" data-icon="tabler:brand-google"></span></a>
+								</div>
+							</form>	
+							<hr>
+							<p>¿Aún no tienes cuenta en Education?</p>
+							<a class="uk-button uk-button-default uk-width-1-1" href="#"  uk-toggle="target: #modal-registro">Crear cuenta</a>
+						</div>
+					</div>
+			</div>
+		</div>
+		<!-- modal registro-->
+			<div id="modal-registro" class="uk-modal" uk-modal>
+		    <div class="uk-modal-dialog">
+		       <div class="uk-modal-body">
+		        <button class="uk-modal-close uk-margin-auto-left uk-display-block" type="button">
+		        	<span class="icono-peq iconify" data-icon="tabler:x"></span>
+		        </button>
+		        <div class="uk-text-center">
+		        	<h2 class="uk-margin">Regístrate y comienza a aprender</h2>
+							<form method="POST">
+								<input class="uk-input" type="text" placeholder="Nombre completo">
+								<input class="uk-input uk-margin-top" type="mail" placeholder="Correo electrónico">
+								<input class="uk-input uk-margin-top" type="password" placeholder="Contraseña" required>
+								<div class="uk-text-left uk-margin-top">
+									<label><input class="uk-checkbox uk-margin-right" type="checkbox">Quiero realizar cursos.</label>
+								</div>	
+								<input class="uk-button uk-button-primary uk-width-1-1 uk-margin-top" type="submit" name="Registrate" value="Registrate">
+								<p>O</p>
+								<div class="uk-flex flex-col-gap-2 uk-flex-center">
+									<a href="#"><span class="icono-nm iconify" data-icon="tabler:brand-twitter"></span></a>
+									<a href="#"><span class="icono-nm iconify" data-icon="tabler:brand-facebook"></span></a>
+									<a href="#"><span class="icono-nm iconify" data-icon="tabler:brand-google"></span></a>
+								</div>
+							</form>
+		          </div>
+		       </div>
+		    </div>
+			</div>
+		<!-- Footer -->
+		<footer class="uk-section uk-section-default uk-padding uk-text-center uk-text-left@m">
+			<div class="uk-container-expand">
+				<div class="uk-width-2-3@m uk-margin-auto">
+					<div class="uk-flex-md uk-flex-between@m">
+						<div class="uk-width-1-3@m">
+							<a class="uk-logo" href="index.html">
+								<img src="img/Logo.png" width="148" height="50">
+							</a>
+							<p class="margin-remove-bottom-md">Transformamos la economía de nuestros países entrenando a la próxima generación de profesionales en tecnología.</p>
+						</div>
+						<a class="uk-button uk-button-secondary uk-width-1-1 uk-width-auto@m" href="contacto.html">Contáctanos</a>
+					</div>
+				</div>
+			</div>
+			<p class="uk-text-center">© 2023 Education, Inc.</p>
+		</footer>
+		<!-- UIkit JS -->
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.21/dist/js/uikit.min.js"></script>
+		<!-- iconos -->
+		<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+	</body>
+</html>
